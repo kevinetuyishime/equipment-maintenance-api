@@ -69,7 +69,7 @@ Set the `DB_PASSWORD` environment variable to your actual MySQL password before 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/equipment-maintenance-api.git
+git clone https://github.com/kevinetuyishime/equipment-maintenance-api.git
 ```
 
 2. Open the project in IntelliJ IDEA.
