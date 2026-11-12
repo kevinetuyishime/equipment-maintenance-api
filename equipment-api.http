@@ -1,0 +1,53 @@
+
+### Register new equipment
+POST http://localhost:8080/api/equipment
+Content-Type: application/json
+
+{
+  "name": "Water Pump",
+  "category": "Mechanical",
+  "serialNumber": "WP001",
+  "manufacturer": "Grundfos",
+  "location": "Kigali",
+  "status": "AVAILABLE"
+}
+
+### Get all equipment
+GET http://localhost:8080/api/equipment
+### Get equipment by ID
+GET http://localhost:8080/api/equipment/1
+### Register maintenance
+POST http://localhost:8080/api/maintenance
+Content-Type: application/json
+
+{
+  "equipment": {
+    "id": 1
+  },
+  "maintenanceType": "Preventive Maintenance",
+  "description": "Routine inspection and servicing of water pump",
+  "maintenanceDate": "2026-11-12",
+  "priority": "HIGH",
+  "status": "PENDING",
+  "technicianName": "John",
+  "cost": 50000
+}
+### Get all registered equipment
+GET http://localhost:8080/api/equipment
+
+### Register maintenance for Water Pump
+POST http://localhost:8080/api/maintenance
+Content-Type: application/json
+
+{
+  "equipment": {
+    "id": 1
+  },
+  "maintenanceType": "Preventive Maintenance",
+  "description": "Routine inspection and servicing of water pump",
+  "maintenanceDate": "2026-11-12",
+  "priority": "HIGH",
+  "status": "PENDING",
+  "technicianName": "John",
+  "cost": 50000
+}
